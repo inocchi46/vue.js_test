@@ -7,7 +7,7 @@ var browserSync = require('browser-sync');
 
 //sass
 gulp.task("sass", function() {
-    return gulp.src('sass/**/*.scss')
+    return gulp.src('sass/*.scss')
         .pipe(sass({
             outputStyle: 'expanded',
             indentType: 'tab',
@@ -19,7 +19,7 @@ gulp.task("sass", function() {
 
 //pug
 gulp.task("pug", function() {
-    return gulp.src('pug/**/*.pug')
+    return gulp.src('pug/*.pug')
         .pipe(plumber())
         .pipe(pug({
             pretty: true
